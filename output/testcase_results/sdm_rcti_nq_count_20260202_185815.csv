@@ -1,0 +1,80 @@
+﻿table_name,sit_prtn_date,prd_prtn_date,sit_count,prd_count,diff
+payonscan_bluebook_ext,NULL,2025-11-04,NULL,284353,NULL
+payonscan_bluebook_ext,NULL,2025-11-05,NULL,284340,NULL
+payonscan_bluebook_ext,NULL,2025-11-06,NULL,284340,NULL
+payonscan_bluebook_ext,NULL,2025-11-07,NULL,284340,NULL
+payonscan_bluebook_ext,NULL,2025-11-08,NULL,284340,NULL
+payonscan_bluebook_ext,NULL,2025-11-09,NULL,284340,NULL
+payonscan_bluebook_ext_dgw,NULL,NULL,NULL,NULL,NULL
+rcti_7eleven_bluebook_ext,NULL,2025-11-04,NULL,39088,NULL
+rcti_7eleven_bluebook_ext,NULL,2025-11-05,NULL,39088,NULL
+rcti_7eleven_bluebook_ext,NULL,2025-11-06,NULL,39088,NULL
+rcti_7eleven_bluebook_ext,NULL,2025-11-07,NULL,39088,NULL
+rcti_7eleven_bluebook_ext,NULL,2025-11-08,NULL,39088,NULL
+rcti_7eleven_bluebook_ext,NULL,2025-11-09,NULL,39088,NULL
+rcti_7eleven_bluebook_ext_dgw,NULL,NULL,NULL,NULL,NULL
+rcti_7eleven_bluebook_ext_dgw_test,NULL,NULL,NULL,NULL,NULL
+rcti_caltex_bluebook_ext,NULL,NULL,NULL,NULL,NULL
+rcti_caltex_bluebook_ext_dgw,NULL,NULL,NULL,NULL,NULL
+rcti_coles,NULL,NULL,NULL,NULL,NULL
+rcti_coles_bluebook_ext,NULL,2025-11-04,NULL,36760,NULL
+rcti_coles_bluebook_ext,NULL,2025-11-05,NULL,36760,NULL
+rcti_coles_bluebook_ext,NULL,2025-11-06,NULL,36760,NULL
+rcti_coles_bluebook_ext,NULL,2025-11-07,NULL,36760,NULL
+rcti_coles_bluebook_ext,NULL,2025-11-08,NULL,36760,NULL
+rcti_coles_bluebook_ext,NULL,2025-11-09,NULL,36760,NULL
+rcti_coles_bluebook_ext_dgw,NULL,NULL,NULL,NULL,NULL
+rcti_coles_sm_bluebook_ext,NULL,2025-11-04,NULL,45944,NULL
+rcti_coles_sm_bluebook_ext,NULL,2025-11-05,NULL,45944,NULL
+rcti_coles_sm_bluebook_ext,NULL,2025-11-06,NULL,45944,NULL
+rcti_coles_sm_bluebook_ext,NULL,2025-11-07,NULL,45944,NULL
+rcti_coles_sm_bluebook_ext,NULL,2025-11-08,NULL,45944,NULL
+rcti_coles_sm_bluebook_ext,NULL,2025-11-09,NULL,45944,NULL
+rcti_coles_sm_bluebook_ext_dgw,NULL,NULL,NULL,NULL,NULL
+rcti_coles_xlsx,NULL,NULL,NULL,NULL,NULL
+rcti_woolies_bluebook_ext,NULL,2025-11-04,NULL,60040,NULL
+rcti_woolies_bluebook_ext,NULL,2025-11-05,NULL,60040,NULL
+rcti_woolies_bluebook_ext,NULL,2025-11-06,NULL,60040,NULL
+rcti_woolies_bluebook_ext,NULL,2025-11-07,NULL,60040,NULL
+rcti_woolies_bluebook_ext,NULL,2025-11-08,NULL,60040,NULL
+rcti_woolies_bluebook_ext,NULL,2025-11-09,NULL,60040,NULL
+rcti_woolies_bluebook_ext_dgw,NULL,NULL,NULL,NULL,NULL
+rcti_woolworths,NULL,NULL,NULL,NULL,NULL
+rcti_woolworths_csv,NULL,NULL,NULL,NULL,NULL
+reddy_express,NULL,NULL,NULL,NULL,NULL
+reddy_express_20250728,NULL,NULL,NULL,NULL,NULL
+
+-----------------------------------------------------------
+        ---*** Generated Query (Debug Preview) ***---        
+-----------------------------------------------------------
+
+WITH prod AS
+  (SELECT TABLE_NAME,
+          PARSE_DATE('%Y%m%d', partition_id) AS partition_date,
+          total_rows
+   FROM `ncau-data-newsquery-prd.sdm_rcti_nq.INFORMATION_SCHEMA.PARTITIONS`
+   WHERE partition_id NOT LIKE '%NULL%'
+     AND PARSE_DATE('%Y%m%d', partition_id) BETWEEN DATE('2025-11-04') AND DATE('2025-11-09')),
+     prod_nq AS
+  (SELECT TABLE_NAME,
+          PARSE_DATE('%Y%m%d', partition_id) AS partition_date,
+          total_rows
+   FROM `ncau-data-newsquery-sit.sdm_rcti_nq.INFORMATION_SCHEMA.PARTITIONS`
+   WHERE partition_id NOT LIKE '%NULL%'
+     AND PARSE_DATE('%Y%m%d', partition_id) BETWEEN DATE('2025-11-05') AND DATE('2025-11-10')),
+     info_table AS
+  (SELECT TABLE_NAME
+   FROM `ncau-data-newsquery-sit.sdm_rcti_nq.INFORMATION_SCHEMA.TABLES`)
+SELECT i.table_name,
+       a.partition_date AS sit_prtn_date,
+       b.partition_date AS prd_prtn_date,
+       a.total_rows AS sit_count,
+       b.total_rows AS prd_count,
+       a.total_rows - b.total_rows AS diff
+FROM info_table i
+LEFT JOIN prod_nq a ON i.table_name = a.table_name
+LEFT JOIN prod b ON i.table_name = b.table_name
+WHERE i.table_name NOT IN ('cart',
+                           'order')
+ORDER BY 1,
+         3;

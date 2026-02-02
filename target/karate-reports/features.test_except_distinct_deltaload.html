@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"10ba96a7-98a4-42bd-a675-c7d7f0465f63",karate_version:"1.5.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.test_except_distinct_deltaload</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-02-02 07:02:55 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:10]"><span>[1:10]</span> <span>SIT and PROD counts must match</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/test_except_distinct_deltaload.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Validate row data</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">regression</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:10]</span>
+                <span class="scenario-name">SIT and PROD counts must match</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>22028</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:10]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def query = &#39;except_distinct_deltaload&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tablename = karate.properties[&#39;tablename&#39;] ? karate.properties[&#39;tablename&#39;] : &#39;*&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">190</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def pythonCmd = buildPythonCmd(query, tablename)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Inside except_distinct.feature: pythonCmd ===&gt; &#39;,pythonCmd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">19:02:33.515 [print] Inside except_distinct.feature: pythonCmd ===&gt;  python src/main/python/run_query.py --query except_distinct_deltaload --tablename &#39;rcti_c*&#39; 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&#39;run-query.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21792</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.11.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.run-query</div>
+      </div>
+      <div class="time-cell passed">21547</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># Run the Python script</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Inside run-query.feature: pythonCmd ===&gt; &#39;, pythonCmd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">230</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11.0.call.0.5">19:02:33.795 [print] Inside run-query.feature: pythonCmd ===&gt;  python src/main/python/run_query.py --query except_distinct_deltaload --tablename &#39;rcti_c*&#39; 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def result = karate.exec(pythonCmd)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21239</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;result ===&gt; &#39;, result</span>
+      </div>
+    </div>
+    <div class="time-cell passed">78</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11.0.call.0.7">19:02:55.055 [print] result ===&gt;  Starting query execution framework...Running query: except_distinct_deltaloadâ–¶ Generated SQL:WITH table_info AS  (SELECT table_catalog,          table_schema,          TABLE_NAME,          STRING_AGG(CONCAT(&#39;`&#39;, COLUMN_NAME, &#39;`&#39;), &#39;,&#39;                     ORDER BY ordinal_position) AS columns   FROM `ncau-data-newsquery-prd.sdm_rcti_nq.INFORMATION_SCHEMA.COLUMNS`   WHERE COLUMN_NAME NOT IN (&#39;nq_batch_id&#39;,                             &#39;dgw_batch_id&#39;,                             &#39;dw_batch_id&#39;,                             &#39;dw_ingest_time&#39;,                             &#39;dw_partition_date&#39;,                             &#39;dw_publish_time&#39;,                             &#39;dw_source_object_name&#39;,                             &#39;soft_error_fields&#39;,                             &#39;extra_data_payload&#39;)     AND TABLE_NAME NOT IN (&#39;appc_send_log&#39;,                            &#39;appc_send_log_0715&#39;,                            &#39;contactsf&#39;,                            &#39;emailobject&#39;,                            &#39;pushmessagedetail&#39;,                            &#39;smsdetailsummary&#39;,                            &#39;cart&#39;,                            &#39;order&#39;)     AND TABLE_NAME IN (&#39;customer&#39;,                        &#39;customer_address&#39;,                        &#39;customer_address_ext&#39;,                        &#39;customer_ext&#39;,                        &#39;demographic&#39;,                        &#39;news_customer_contract&#39;,                        &#39;news_demographic_ex&#39;,                        &#39;news_ext_customer_redemption&#39;,                        &#39;news_financial_transaction&#39;,                        &#39;news_interactions&#39;,                        &#39;news_payment_account_ext&#39;,                        &#39;order_item&#39;,                        &#39;order_item_ext&#39;,                        &#39;order_item_note&#39;,                        &#39;paybreak&#39;,                        &#39;payment&#39;,                        &#39;payment_account&#39;,                        &#39;payment_reversed_payment&#39;,                        &#39;service&#39;,                        &#39;service_ext&#39;,                        &#39;gbaba_act_xref&#39;,                        &#39;ad_custom_fields_export&#39;,                        &#39;customers_export&#39;,                        &#39;display_ads_export&#39;,                        &#39;insert_ads_export&#39;,                        &#39;online_ad_export2&#39;,                        &#39;order_custom_fields_export&#39;,                        &#39;order_export2&#39;,                        &#39;order_item_audience_segment&#39;,                        &#39;order_item_metadata&#39;,                        &#39;order_item_price_item&#39;,                        &#39;order_items&#39;)   GROUP BY table_catalog,            table_schema,            TABLE_NAME)SELECT &#39;SIT-prod&#39; AS scenario,       TABLE_NAME,       CONCAT(&#39;SELECT &quot;&#39;, TABLE_NAME, &#39;&quot; AS table_name, &#39;, columns, &#39; FROM `&#39;, &#39;ncau-data-newsquery-sit&#39;, &#39;.&#39;, &#39;sdm_rcti_nq&#39;, &#39;.&#39;, TABLE_NAME, &#39;` &#39;, &#39;WHERE dw_partition_date BETWEEN &quot;&#39;, &#39;2025-11-05&#39;, &#39;&quot; AND &quot;&#39;, &#39;2025-11-10&#39;, &#39;&quot; &#39;, &#39; EXCEPT DISTINCT &#39;, &#39;SELECT &quot;&#39;, TABLE_NAME, &#39;&quot; AS table_name, &#39;, columns, &#39; FROM `&#39;, &#39;ncau-data-newsquery-prd&#39;, &#39;.&#39;, &#39;sdm_rcti_nq&#39;, &#39;.&#39;, TABLE_NAME, &#39;` &#39;, &#39;WHERE dw_partition_date BETWEEN &quot;&#39;, &#39;2025-11-04&#39;, &#39;&quot; AND &quot;&#39;, &#39;2025-11-09&#39;, &#39;&quot;;&#39;) AS testcaseFROM table_infoUNION ALLSELECT &#39;prod-SIT&#39; AS scenario,       TABLE_NAME,       CONCAT(&#39;SELECT &quot;&#39;, TABLE_NAME, &#39;&quot; AS table_name, &#39;, columns, &#39; FROM `&#39;, &#39;ncau-data-newsquery-prd&#39;, &#39;.&#39;, &#39;sdm_rcti_nq&#39;, &#39;.&#39;, TABLE_NAME, &#39;` &#39;, &#39;WHERE dw_partition_date BETWEEN &quot;&#39;, &#39;2025-11-04&#39;, &#39;&quot; AND &quot;&#39;, &#39;2025-11-09&#39;, &#39;&quot; &#39;, &#39; EXCEPT DISTINCT &#39;, &#39;SELECT &quot;&#39;, TABLE_NAME, &#39;&quot; AS table_name, &#39;, columns, &#39; FROM `&#39;, &#39;ncau-data-newsquery-sit&#39;, &#39;.&#39;, &#39;sdm_rcti_nq&#39;, &#39;.&#39;, TABLE_NAME, &#39;` &#39;, &#39;WHERE dw_partition_date BETWEEN &quot;&#39;, &#39;2025-11-05&#39;, &#39;&quot; AND &quot;&#39;, &#39;2025-11-10&#39;, &#39;&quot;;&#39;) AS testcaseFROM table_infoORDER BY TABLE_NAME;Executing query... | (0.0s)Executing query... / (0.2s)Executing query... - (0.4s)Executing query... \ (0.8s)Executing query... | (0.9s)Executing query... / (1.0s)Executing query... - (1.1s)Executing query... \ (1.2s)Executing query... | (1.3s)Executing query... / (1.4s)Executing query... - (1.5s)Executing query... \ (1.6s)Executing query... | (1.7s)Executing query... / (1.8s)Executing query... - (2.0s)Executing query... \ (2.3s)Executing query... | (2.5s)Executing query... / (2.6s)Executing query... - (2.8s)Executing query... \ (2.9s)D:\Users\ganesany\AppData\Roaming\Python\Python311\site-packages\google\cloud\bigquery\table.py:1994: UserWarning: BigQuery Storage module not found, fetch data with the REST endpoint instead.  warnings.warn(Executing query... | (3.2s)Executing query... / (3.3s)Executing query... - (3.4s)Executing query... \ (3.5s)                                             Error running query except_distinct_deltaload: â�Œ No testcases found matching tables starting with &#39;rcti_c&#39;.Fatal error: â�Œ No testcases found matching tables starting with &#39;rcti_c&#39;. 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

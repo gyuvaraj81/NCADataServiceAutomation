@@ -1,0 +1,47 @@
+project: "ncau-data-newsquery-prd"
+project_nq: "ncau-data-newsquery-sit"
+dataset: "sdm_rcti_nq"
+dataset_nq: "sdm_rcti_nq"
+startdate: "2025-11-04"
+enddate: "2025-11-09"
+startdate_nq: "2025-11-05"
+enddate_nq: "2025-11-10"
+output_csv: "output/"
+skip_tables:
+  - cart
+  - order
+deltaload_tables:
+  - customer
+  - customer_address
+  - customer_address_ext
+  - customer_ext
+  - demographic
+  - news_customer_contract
+  - news_demographic_ex
+  - news_ext_customer_redemption
+  - news_financial_transaction
+  - news_interactions
+  - news_payment_account_ext
+  - order_item
+  - order_item_ext
+  - order_item_note
+  - paybreak
+  - payment
+  - payment_account
+  - payment_reversed_payment
+  - service
+  - service_ext
+# GBABA
+  - gbaba_act_xref
+# Adpoint
+  - ad_custom_fields_export
+  - customers_export
+  - display_ads_export
+  - insert_ads_export
+  - online_ad_export2
+  - order_custom_fields_export
+  - order_export2
+  - order_item_audience_segment
+  - order_item_metadata
+  - order_item_price_item
+  - order_items

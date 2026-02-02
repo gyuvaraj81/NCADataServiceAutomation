@@ -1,0 +1,87 @@
+﻿scenario,table_name,testcase
+prod-SIT,payonscan_bluebook_ext,"SELECT ""payonscan_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`vendor`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-prd.sdm_rcti_nq.payonscan_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-04"" AND ""2025-11-09""  EXCEPT DISTINCT SELECT ""payonscan_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`vendor`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-sit.sdm_rcti_nq.payonscan_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-05"" AND ""2025-11-10"";"
+SIT-prod,payonscan_bluebook_ext,"SELECT ""payonscan_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`vendor`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-sit.sdm_rcti_nq.payonscan_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-05"" AND ""2025-11-10""  EXCEPT DISTINCT SELECT ""payonscan_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`vendor`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-prd.sdm_rcti_nq.payonscan_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-04"" AND ""2025-11-09"";"
+prod-SIT,rcti_7eleven_bluebook_ext,"SELECT ""rcti_7eleven_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-prd.sdm_rcti_nq.rcti_7eleven_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-04"" AND ""2025-11-09""  EXCEPT DISTINCT SELECT ""rcti_7eleven_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-sit.sdm_rcti_nq.rcti_7eleven_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-05"" AND ""2025-11-10"";"
+SIT-prod,rcti_7eleven_bluebook_ext,"SELECT ""rcti_7eleven_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-sit.sdm_rcti_nq.rcti_7eleven_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-05"" AND ""2025-11-10""  EXCEPT DISTINCT SELECT ""rcti_7eleven_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-prd.sdm_rcti_nq.rcti_7eleven_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-04"" AND ""2025-11-09"";"
+prod-SIT,rcti_caltex_bluebook_ext,"SELECT ""rcti_caltex_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-prd.sdm_rcti_nq.rcti_caltex_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-04"" AND ""2025-11-09""  EXCEPT DISTINCT SELECT ""rcti_caltex_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-sit.sdm_rcti_nq.rcti_caltex_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-05"" AND ""2025-11-10"";"
+SIT-prod,rcti_caltex_bluebook_ext,"SELECT ""rcti_caltex_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-sit.sdm_rcti_nq.rcti_caltex_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-05"" AND ""2025-11-10""  EXCEPT DISTINCT SELECT ""rcti_caltex_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-prd.sdm_rcti_nq.rcti_caltex_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-04"" AND ""2025-11-09"";"
+prod-SIT,rcti_coles_bluebook_ext,"SELECT ""rcti_coles_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-prd.sdm_rcti_nq.rcti_coles_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-04"" AND ""2025-11-09""  EXCEPT DISTINCT SELECT ""rcti_coles_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-sit.sdm_rcti_nq.rcti_coles_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-05"" AND ""2025-11-10"";"
+SIT-prod,rcti_coles_bluebook_ext,"SELECT ""rcti_coles_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-sit.sdm_rcti_nq.rcti_coles_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-05"" AND ""2025-11-10""  EXCEPT DISTINCT SELECT ""rcti_coles_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-prd.sdm_rcti_nq.rcti_coles_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-04"" AND ""2025-11-09"";"
+prod-SIT,rcti_coles_sm_bluebook_ext,"SELECT ""rcti_coles_sm_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-prd.sdm_rcti_nq.rcti_coles_sm_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-04"" AND ""2025-11-09""  EXCEPT DISTINCT SELECT ""rcti_coles_sm_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-sit.sdm_rcti_nq.rcti_coles_sm_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-05"" AND ""2025-11-10"";"
+SIT-prod,rcti_coles_sm_bluebook_ext,"SELECT ""rcti_coles_sm_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-sit.sdm_rcti_nq.rcti_coles_sm_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-05"" AND ""2025-11-10""  EXCEPT DISTINCT SELECT ""rcti_coles_sm_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-prd.sdm_rcti_nq.rcti_coles_sm_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-04"" AND ""2025-11-09"";"
+prod-SIT,rcti_woolies_bluebook_ext,"SELECT ""rcti_woolies_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-prd.sdm_rcti_nq.rcti_woolies_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-04"" AND ""2025-11-09""  EXCEPT DISTINCT SELECT ""rcti_woolies_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-sit.sdm_rcti_nq.rcti_woolies_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-05"" AND ""2025-11-10"";"
+SIT-prod,rcti_woolies_bluebook_ext,"SELECT ""rcti_woolies_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-sit.sdm_rcti_nq.rcti_woolies_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-05"" AND ""2025-11-10""  EXCEPT DISTINCT SELECT ""rcti_woolies_bluebook_ext"" AS table_name, `pubid`,`pubdate`,`routeid`,`periodsalescharge`,`perioddrawcopycount`,`periodsalescopycount`,`periodreturns`,`periodchargerate`,`periodrevenuecharge`,`periodreturnscharge`,`prevperioddrawcopycount`,`prevperiodsalescopycount`,`prevperiodreturns`,`prevperiodchargerate`,`prevperiodrevenuecharge`,`prevperiodreturnscharge` FROM `ncau-data-newsquery-prd.sdm_rcti_nq.rcti_woolies_bluebook_ext` WHERE dw_partition_date BETWEEN ""2025-11-04"" AND ""2025-11-09"";"
+
+-----------------------------------------------------------
+        ---*** Generated Query (Debug Preview) ***---        
+-----------------------------------------------------------
+
+WITH table_info AS
+  (SELECT table_catalog,
+          table_schema,
+          TABLE_NAME,
+          STRING_AGG(CONCAT('`', COLUMN_NAME, '`'), ','
+                     ORDER BY ordinal_position) AS columns
+   FROM `ncau-data-newsquery-prd.sdm_rcti_nq.INFORMATION_SCHEMA.COLUMNS`
+   WHERE COLUMN_NAME NOT IN ('nq_batch_id',
+                             'dgw_batch_id',
+                             'dw_batch_id',
+                             'dw_ingest_time',
+                             'dw_partition_date',
+                             'dw_publish_time',
+                             'dw_source_object_name',
+                             'soft_error_fields',
+                             'extra_data_payload')
+     AND TABLE_NAME NOT IN ('appc_send_log',
+                            'appc_send_log_0715',
+                            'contactsf',
+                            'emailobject',
+                            'pushmessagedetail',
+                            'smsdetailsummary',
+                            'cart',
+                            'order')
+     AND TABLE_NAME NOT IN ('customer',
+                            'customer_address',
+                            'customer_address_ext',
+                            'customer_ext',
+                            'demographic',
+                            'news_customer_contract',
+                            'news_demographic_ex',
+                            'news_ext_customer_redemption',
+                            'news_financial_transaction',
+                            'news_interactions',
+                            'news_payment_account_ext',
+                            'order_item',
+                            'order_item_ext',
+                            'order_item_note',
+                            'paybreak',
+                            'payment',
+                            'payment_account',
+                            'payment_reversed_payment',
+                            'service',
+                            'service_ext',
+                            'gbaba_act_xref',
+                            'ad_custom_fields_export',
+                            'customers_export',
+                            'display_ads_export',
+                            'insert_ads_export',
+                            'online_ad_export2',
+                            'order_custom_fields_export',
+                            'order_export2',
+                            'order_item_audience_segment',
+                            'order_item_metadata',
+                            'order_item_price_item',
+                            'order_items')
+   GROUP BY table_catalog,
+            table_schema,
+            TABLE_NAME)
+SELECT 'SIT-prod' AS scenario,
+       TABLE_NAME,
+       CONCAT('SELECT "', TABLE_NAME, '" AS table_name, ', columns, ' FROM `', 'ncau-data-newsquery-sit', '.', 'sdm_rcti_nq', '.', TABLE_NAME, '` ', 'WHERE dw_partition_date BETWEEN "', '2025-11-05', '" AND "', '2025-11-10', '" ', ' EXCEPT DISTINCT ', 'SELECT "', TABLE_NAME, '" AS table_name, ', columns, ' FROM `', 'ncau-data-newsquery-prd', '.', 'sdm_rcti_nq', '.', TABLE_NAME, '` ', 'WHERE dw_partition_date BETWEEN "', '2025-11-04', '" AND "', '2025-11-09', '";') AS testcase
+FROM table_info
+UNION ALL
+SELECT 'prod-SIT' AS scenario,
+       TABLE_NAME,
+       CONCAT('SELECT "', TABLE_NAME, '" AS table_name, ', columns, ' FROM `', 'ncau-data-newsquery-prd', '.', 'sdm_rcti_nq', '.', TABLE_NAME, '` ', 'WHERE dw_partition_date BETWEEN "', '2025-11-04', '" AND "', '2025-11-09', '" ', ' EXCEPT DISTINCT ', 'SELECT "', TABLE_NAME, '" AS table_name, ', columns, ' FROM `', 'ncau-data-newsquery-sit', '.', 'sdm_rcti_nq', '.', TABLE_NAME, '` ', 'WHERE dw_partition_date BETWEEN "', '2025-11-05', '" AND "', '2025-11-10', '";') AS testcase
+FROM table_info
+ORDER BY TABLE_NAME;

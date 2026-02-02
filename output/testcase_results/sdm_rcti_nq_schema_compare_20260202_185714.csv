@@ -1,0 +1,455 @@
+﻿table_name,column_name,prod_type,prod_nq_type,prod_nullable,prod_nq_nullable,diff_status
+payonscan_bluebook_ext,dw_batch_id,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,dw_ingest_time,TIMESTAMP,TIMESTAMP,YES,YES,MATCH
+payonscan_bluebook_ext,dw_partition_date,DATE,DATE,YES,YES,MATCH
+payonscan_bluebook_ext,dw_publish_time,TIMESTAMP,TIMESTAMP,YES,YES,MATCH
+payonscan_bluebook_ext,dw_source_object_name,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,extra_data_payload,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,periodchargerate,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,perioddrawcopycount,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,periodreturns,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,periodreturnscharge,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,periodrevenuecharge,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,periodsalescharge,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,periodsalescopycount,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,prevperiodchargerate,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,prevperioddrawcopycount,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,prevperiodreturns,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,prevperiodreturnscharge,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,prevperiodrevenuecharge,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,prevperiodsalescopycount,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,pubdate,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,pubid,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,routeid,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext,soft_error_fields,"ARRAY<STRUCT<name STRING, value STRING>>","ARRAY<STRUCT<name STRING, value STRING>>",NO,NO,MATCH
+payonscan_bluebook_ext,vendor,STRING,STRING,YES,YES,MATCH
+payonscan_bluebook_ext_dgw,dw_batch_id,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,dw_ingest_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,dw_partition_date,NULL,DATE,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,dw_publish_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,dw_source_object_name,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,extra_data_payload,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,periodchargerate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,perioddrawcopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,periodreturns,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,periodreturnscharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,periodrevenuecharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,periodsalescharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,periodsalescopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,prevperiodchargerate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,prevperioddrawcopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,prevperiodreturns,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,prevperiodreturnscharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,prevperiodrevenuecharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,prevperiodsalescopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,pubdate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,pubid,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,routeid,NULL,STRING,NULL,YES,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,soft_error_fields,NULL,"ARRAY<STRUCT<name STRING, value STRING>>",NULL,NO,TYPE_MISMATCH
+payonscan_bluebook_ext_dgw,vendor,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext,dw_batch_id,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,dw_ingest_time,TIMESTAMP,TIMESTAMP,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,dw_partition_date,DATE,DATE,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,dw_publish_time,TIMESTAMP,TIMESTAMP,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,dw_source_object_name,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,extra_data_payload,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,periodchargerate,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,perioddrawcopycount,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,periodreturns,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,periodreturnscharge,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,periodrevenuecharge,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,periodsalescharge,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,periodsalescopycount,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,prevperiodchargerate,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,prevperioddrawcopycount,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,prevperiodreturns,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,prevperiodreturnscharge,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,prevperiodrevenuecharge,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,prevperiodsalescopycount,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,pubdate,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,pubid,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,routeid,STRING,STRING,YES,YES,MATCH
+rcti_7eleven_bluebook_ext,soft_error_fields,"ARRAY<STRUCT<name STRING, value STRING>>","ARRAY<STRUCT<name STRING, value STRING>>",NO,NO,MATCH
+rcti_7eleven_bluebook_ext_dgw,dw_batch_id,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,dw_ingest_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,dw_partition_date,NULL,DATE,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,dw_publish_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,dw_source_object_name,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,extra_data_payload,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,periodchargerate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,perioddrawcopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,periodreturns,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,periodreturnscharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,periodrevenuecharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,periodsalescharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,periodsalescopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,prevperiodchargerate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,prevperioddrawcopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,prevperiodreturns,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,prevperiodreturnscharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,prevperiodrevenuecharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,prevperiodsalescopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,pubdate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,pubid,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,routeid,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw,soft_error_fields,NULL,"ARRAY<STRUCT<name STRING, value STRING>>",NULL,NO,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,dw_batch_id,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,dw_ingest_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,dw_partition_date,NULL,DATE,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,dw_publish_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,dw_source_object_name,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,extra_data_payload,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,periodchargerate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,perioddrawcopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,periodreturns,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,periodreturnscharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,periodrevenuecharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,periodsalescharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,periodsalescopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,prevperiodchargerate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,prevperioddrawcopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,prevperiodreturns,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,prevperiodreturnscharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,prevperiodrevenuecharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,prevperiodsalescopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,pubdate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,pubid,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,routeid,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_7eleven_bluebook_ext_dgw_test,soft_error_fields,NULL,"ARRAY<STRUCT<name STRING, value STRING>>",NULL,NO,TYPE_MISMATCH
+rcti_caltex_bluebook_ext,dw_batch_id,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,dw_ingest_time,TIMESTAMP,TIMESTAMP,YES,YES,MATCH
+rcti_caltex_bluebook_ext,dw_partition_date,DATE,DATE,YES,YES,MATCH
+rcti_caltex_bluebook_ext,dw_publish_time,TIMESTAMP,TIMESTAMP,YES,YES,MATCH
+rcti_caltex_bluebook_ext,dw_source_object_name,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,extra_data_payload,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,periodchargerate,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,perioddrawcopycount,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,periodreturns,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,periodreturnscharge,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,periodrevenuecharge,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,periodsalescharge,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,periodsalescopycount,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,prevperiodchargerate,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,prevperioddrawcopycount,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,prevperiodreturns,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,prevperiodreturnscharge,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,prevperiodrevenuecharge,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,prevperiodsalescopycount,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,pubdate,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,pubid,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,routeid,STRING,STRING,YES,YES,MATCH
+rcti_caltex_bluebook_ext,soft_error_fields,"ARRAY<STRUCT<name STRING, value STRING>>","ARRAY<STRUCT<name STRING, value STRING>>",NO,NO,MATCH
+rcti_caltex_bluebook_ext_dgw,dw_batch_id,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,dw_ingest_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,dw_partition_date,NULL,DATE,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,dw_publish_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,dw_source_object_name,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,extra_data_payload,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,periodchargerate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,perioddrawcopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,periodreturns,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,periodreturnscharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,periodrevenuecharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,periodsalescharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,periodsalescopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,prevperiodchargerate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,prevperioddrawcopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,prevperiodreturns,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,prevperiodreturnscharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,prevperiodrevenuecharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,prevperiodsalescopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,pubdate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,pubid,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,routeid,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_caltex_bluebook_ext_dgw,soft_error_fields,NULL,"ARRAY<STRUCT<name STRING, value STRING>>",NULL,NO,TYPE_MISMATCH
+rcti_coles,Date,NULL,DATE,NULL,YES,TYPE_MISMATCH
+rcti_coles,DayName,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,LocationId,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,LocationName,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,Metrics,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,PLU,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,PLU_Code,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,SalesQty,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,SellItemId,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,SellItemName,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,SupplierId,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,SupplierName,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,Unit,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,dw_batch_id,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,dw_ingest_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_coles,dw_partition_date,NULL,DATE,NULL,YES,TYPE_MISMATCH
+rcti_coles,dw_publish_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_coles,dw_source_object_name,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,extra_data_payload,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles,soft_error_fields,NULL,"ARRAY<STRUCT<name STRING, value STRING>>",NULL,NO,TYPE_MISMATCH
+rcti_coles_bluebook_ext,dw_batch_id,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,dw_ingest_time,TIMESTAMP,TIMESTAMP,YES,YES,MATCH
+rcti_coles_bluebook_ext,dw_partition_date,DATE,DATE,YES,YES,MATCH
+rcti_coles_bluebook_ext,dw_publish_time,TIMESTAMP,TIMESTAMP,YES,YES,MATCH
+rcti_coles_bluebook_ext,dw_source_object_name,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,extra_data_payload,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,periodchargerate,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,perioddrawcopycount,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,periodreturns,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,periodreturnscharge,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,periodrevenuecharge,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,periodsalescharge,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,periodsalescopycount,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,prevperiodchargerate,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,prevperioddrawcopycount,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,prevperiodreturns,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,prevperiodreturnscharge,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,prevperiodrevenuecharge,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,prevperiodsalescopycount,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,pubdate,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,pubid,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,routeid,STRING,STRING,YES,YES,MATCH
+rcti_coles_bluebook_ext,soft_error_fields,"ARRAY<STRUCT<name STRING, value STRING>>","ARRAY<STRUCT<name STRING, value STRING>>",NO,NO,MATCH
+rcti_coles_bluebook_ext_dgw,dw_batch_id,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,dw_ingest_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,dw_partition_date,NULL,DATE,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,dw_publish_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,dw_source_object_name,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,extra_data_payload,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,periodchargerate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,perioddrawcopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,periodreturns,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,periodreturnscharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,periodrevenuecharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,periodsalescharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,periodsalescopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,prevperiodchargerate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,prevperioddrawcopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,prevperiodreturns,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,prevperiodreturnscharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,prevperiodrevenuecharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,prevperiodsalescopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,pubdate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,pubid,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,routeid,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_bluebook_ext_dgw,soft_error_fields,NULL,"ARRAY<STRUCT<name STRING, value STRING>>",NULL,NO,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext,dw_batch_id,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,dw_ingest_time,TIMESTAMP,TIMESTAMP,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,dw_partition_date,DATE,DATE,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,dw_publish_time,TIMESTAMP,TIMESTAMP,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,dw_source_object_name,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,extra_data_payload,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,periodchargerate,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,perioddrawcopycount,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,periodreturns,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,periodreturnscharge,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,periodrevenuecharge,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,periodsalescharge,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,periodsalescopycount,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,prevperiodchargerate,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,prevperioddrawcopycount,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,prevperiodreturns,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,prevperiodreturnscharge,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,prevperiodrevenuecharge,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,prevperiodsalescopycount,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,pubdate,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,pubid,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,routeid,STRING,STRING,YES,YES,MATCH
+rcti_coles_sm_bluebook_ext,soft_error_fields,"ARRAY<STRUCT<name STRING, value STRING>>","ARRAY<STRUCT<name STRING, value STRING>>",NO,NO,MATCH
+rcti_coles_sm_bluebook_ext_dgw,dw_batch_id,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,dw_ingest_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,dw_partition_date,NULL,DATE,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,dw_publish_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,dw_source_object_name,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,extra_data_payload,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,periodchargerate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,perioddrawcopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,periodreturns,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,periodreturnscharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,periodrevenuecharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,periodsalescharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,periodsalescopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,prevperiodchargerate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,prevperioddrawcopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,prevperiodreturns,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,prevperiodreturnscharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,prevperiodrevenuecharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,prevperiodsalescopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,pubdate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,pubid,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,routeid,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_sm_bluebook_ext_dgw,soft_error_fields,NULL,"ARRAY<STRUCT<name STRING, value STRING>>",NULL,NO,TYPE_MISMATCH
+rcti_coles_xlsx,Date,NULL,DATE,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,DayName,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,LocationId,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,LocationName,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,Metrics,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,PLU,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,PLU_Code,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,SalesQty,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,SellItemId,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,SellItemName,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,SupplierId,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,SupplierName,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,Unit,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,dw_batch_id,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,dw_ingest_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,dw_partition_date,NULL,DATE,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,dw_publish_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,dw_source_object_name,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,extra_data_payload,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_coles_xlsx,soft_error_fields,NULL,"ARRAY<STRUCT<name STRING, value STRING>>",NULL,NO,TYPE_MISMATCH
+rcti_woolies_bluebook_ext,dw_batch_id,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,dw_ingest_time,TIMESTAMP,TIMESTAMP,YES,YES,MATCH
+rcti_woolies_bluebook_ext,dw_partition_date,DATE,DATE,YES,YES,MATCH
+rcti_woolies_bluebook_ext,dw_publish_time,TIMESTAMP,TIMESTAMP,YES,YES,MATCH
+rcti_woolies_bluebook_ext,dw_source_object_name,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,extra_data_payload,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,periodchargerate,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,perioddrawcopycount,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,periodreturns,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,periodreturnscharge,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,periodrevenuecharge,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,periodsalescharge,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,periodsalescopycount,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,prevperiodchargerate,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,prevperioddrawcopycount,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,prevperiodreturns,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,prevperiodreturnscharge,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,prevperiodrevenuecharge,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,prevperiodsalescopycount,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,pubdate,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,pubid,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,routeid,STRING,STRING,YES,YES,MATCH
+rcti_woolies_bluebook_ext,soft_error_fields,"ARRAY<STRUCT<name STRING, value STRING>>","ARRAY<STRUCT<name STRING, value STRING>>",NO,NO,MATCH
+rcti_woolies_bluebook_ext_dgw,dw_batch_id,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,dw_ingest_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,dw_partition_date,NULL,DATE,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,dw_publish_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,dw_source_object_name,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,extra_data_payload,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,periodchargerate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,perioddrawcopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,periodreturns,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,periodreturnscharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,periodrevenuecharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,periodsalescharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,periodsalescopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,prevperiodchargerate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,prevperioddrawcopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,prevperiodreturns,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,prevperiodreturnscharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,prevperiodrevenuecharge,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,prevperiodsalescopycount,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,pubdate,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,pubid,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,routeid,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolies_bluebook_ext_dgw,soft_error_fields,NULL,"ARRAY<STRUCT<name STRING, value STRING>>",NULL,NO,TYPE_MISMATCH
+rcti_woolworths,Article,NULL,INT64,NULL,YES,TYPE_MISMATCH
+rcti_woolworths,Article_Description,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolworths,Calendar_Day,NULL,INT64,NULL,YES,TYPE_MISMATCH
+rcti_woolworths,Fiscal_Week_Year,NULL,INT64,NULL,YES,TYPE_MISMATCH
+rcti_woolworths,Sales_Qty_Units,NULL,INT64,NULL,YES,TYPE_MISMATCH
+rcti_woolworths,Sales_ex_GST,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+rcti_woolworths,Site,NULL,INT64,NULL,YES,TYPE_MISMATCH
+rcti_woolworths,Site_Description,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolworths,dw_batch_id,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolworths,dw_ingest_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_woolworths,dw_partition_date,NULL,DATE,NULL,YES,TYPE_MISMATCH
+rcti_woolworths,dw_publish_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_woolworths,dw_source_object_name,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolworths,extra_data_payload,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolworths,soft_error_fields,NULL,"ARRAY<STRUCT<name STRING, value STRING>>",NULL,NO,TYPE_MISMATCH
+rcti_woolworths_csv,Article,NULL,INT64,NULL,YES,TYPE_MISMATCH
+rcti_woolworths_csv,Article_Description,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolworths_csv,Calendar_Day,NULL,INT64,NULL,YES,TYPE_MISMATCH
+rcti_woolworths_csv,Fiscal_Week_Year,NULL,INT64,NULL,YES,TYPE_MISMATCH
+rcti_woolworths_csv,Sales_Qty_Units,NULL,INT64,NULL,YES,TYPE_MISMATCH
+rcti_woolworths_csv,Sales_ex_GST,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+rcti_woolworths_csv,Site,NULL,INT64,NULL,YES,TYPE_MISMATCH
+rcti_woolworths_csv,Site_Description,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolworths_csv,dw_batch_id,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolworths_csv,dw_ingest_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_woolworths_csv,dw_partition_date,NULL,DATE,NULL,YES,TYPE_MISMATCH
+rcti_woolworths_csv,dw_publish_time,NULL,TIMESTAMP,NULL,YES,TYPE_MISMATCH
+rcti_woolworths_csv,dw_source_object_name,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolworths_csv,extra_data_payload,NULL,STRING,NULL,YES,TYPE_MISMATCH
+rcti_woolworths_csv,soft_error_fields,NULL,"ARRAY<STRUCT<name STRING, value STRING>>",NULL,NO,TYPE_MISMATCH
+reddy_express,PERIODCHARGERATE,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+reddy_express,PERIODDRAWCOPYCOUNT,NULL,INT64,NULL,YES,TYPE_MISMATCH
+reddy_express,PERIODRETURNS,NULL,INT64,NULL,YES,TYPE_MISMATCH
+reddy_express,PERIODRETURNSCHARGE,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+reddy_express,PERIODREVENUECHARGE,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+reddy_express,PERIODSALESCHARGE,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+reddy_express,PERIODSALESCOPYCOUNT,NULL,INT64,NULL,YES,TYPE_MISMATCH
+reddy_express,PREVPERIODCHARGERATE,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+reddy_express,PREVPERIODDRAWCOPYCOUNT,NULL,INT64,NULL,YES,TYPE_MISMATCH
+reddy_express,PREVPERIODRETURNS,NULL,INT64,NULL,YES,TYPE_MISMATCH
+reddy_express,PREVPERIODRETURNSCHARGE,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+reddy_express,PREVPERIODREVENUECHARGE,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+reddy_express,PREVPERIODSALESCOPYCOUNT,NULL,INT64,NULL,YES,TYPE_MISMATCH
+reddy_express,PUBDATE,NULL,DATE,NULL,YES,TYPE_MISMATCH
+reddy_express,PUBID,NULL,STRING,NULL,YES,TYPE_MISMATCH
+reddy_express,ROUTEID,NULL,STRING,NULL,YES,TYPE_MISMATCH
+reddy_express,VENDOR,NULL,STRING,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PERIODCHARGERATE,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PERIODDRAWCOPYCOUNT,NULL,INT64,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PERIODRETURNS,NULL,INT64,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PERIODRETURNSCHARGE,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PERIODREVENUECHARGE,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PERIODSALESCHARGE,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PERIODSALESCOPYCOUNT,NULL,INT64,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PREVPERIODCHARGERATE,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PREVPERIODDRAWCOPYCOUNT,NULL,INT64,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PREVPERIODRETURNS,NULL,INT64,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PREVPERIODRETURNSCHARGE,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PREVPERIODREVENUECHARGE,NULL,FLOAT64,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PREVPERIODSALESCOPYCOUNT,NULL,INT64,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PUBDATE,NULL,DATE,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,PUBID,NULL,STRING,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,ROUTEID,NULL,STRING,NULL,YES,TYPE_MISMATCH
+reddy_express_20250728,VENDOR,NULL,STRING,NULL,YES,TYPE_MISMATCH
+
+-----------------------------------------------------------
+        ---*** Generated Query (Debug Preview) ***---        
+-----------------------------------------------------------
+
+WITH prod_schema AS
+  (SELECT TABLE_NAME,
+          COLUMN_NAME,
+          data_type,
+          is_nullable
+   FROM `ncau-data-newsquery-prd.sdm_rcti_nq.INFORMATION_SCHEMA.COLUMNS`),
+     sit_schema AS
+  (SELECT TABLE_NAME,
+          COLUMN_NAME,
+          data_type,
+          is_nullable
+   FROM `ncau-data-newsquery-sit.sdm_rcti_nq.INFORMATION_SCHEMA.COLUMNS`),
+     all_columns AS
+  (-- Get all unique table/column combinations from both datasets
+ SELECT TABLE_NAME,
+        COLUMN_NAME
+   FROM prod_schema
+   UNION DISTINCT SELECT TABLE_NAME,
+                         COLUMN_NAME
+   FROM sit_schema)
+SELECT c.table_name,
+       c.column_name,
+       p.data_type AS prod_type,
+       n.data_type AS prod_nq_type,
+       p.is_nullable AS prod_nullable,
+       n.is_nullable AS prod_nq_nullable,
+       CASE
+           WHEN p.data_type IS DISTINCT
+                FROM n.data_type THEN 'TYPE_MISMATCH'
+           WHEN p.is_nullable IS DISTINCT
+                FROM n.is_nullable THEN 'NULLABILITY_MISMATCH'
+           ELSE 'MATCH'
+       END AS diff_status
+FROM all_columns c
+LEFT JOIN prod_schema p ON c.table_name = p.table_name
+AND c.column_name = p.column_name
+LEFT JOIN sit_schema n ON c.table_name = n.table_name
+AND c.column_name = n.column_name
+WHERE c.table_name NOT IN ('cart',
+                           'order',
+                           'customer',
+                           'customer_address')
+ORDER BY c.table_name,
+         c.column_name;
