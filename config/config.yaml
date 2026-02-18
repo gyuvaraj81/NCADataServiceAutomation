@@ -1,11 +1,11 @@
 project: "ncau-data-newsquery-prd"
-project_nq: "ncau-data-newsquery-sit"
-dataset: "sdm_rcti_nq"
-dataset_nq: "sdm_rcti_nq"
-startdate: "2025-11-04"
-enddate: "2025-11-09"
-startdate_nq: "2025-11-05"
-enddate_nq: "2025-11-10"
+project_nq: "ncau-data-newsquery-prd"
+dataset: "sdm_optima_dgw"
+dataset_nq: "sdm_optima"
+startdate: "2026-02-16"
+enddate: "2026-02-16"
+startdate_nq: "2026-02-16"
+enddate_nq: "2026-02-16"
 output_csv: "output/"
 skip_tables:
   - cart
@@ -33,6 +33,16 @@ deltaload_tables:
   - service_ext
 # GBABA
   - gbaba_act_xref
+# OPTIMA
+  - audit_extract
+  - pagination_extract
+# RCTI
+  - payonscan_bluebook_ext
+  - rcti_7eleven_bluebook_ext
+  - rcti_caltex_bluebook_ext
+  - rcti_coles_bluebook_ext
+  - rcti_coles_sm_bluebook_ext
+  - rcti_woolies_bluebook_exts
 # Adpoint
   - ad_custom_fields_export
   - customers_export

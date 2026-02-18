@@ -1,0 +1,79 @@
+# cloudbuild.yaml
+steps:
+  # Step 1: Install Python dependencies
+  - name: 'python:3.10-slim'
+    id: 'install-python-deps'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        pip install -r requirements.txt --target=/workspace/python_deps
+        export PYTHONPATH=/workspace/python_deps:$PYTHONPATH
+
+  # Step 2: Run Karate tests
+  - name: 'openjdk:17-slim'
+    id: 'run-karate-tests'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo "====================================="
+        echo "Running ${_QUERY_TYPE} validation"
+        echo "Table filter: ${_TABLENAME}"
+        echo "====================================="
+        
+        java -Dtablename="${_TABLENAME}" \
+             -jar karate-1.5.1.jar \
+             --tags @${_TAG} \
+             features/test_${_QUERY_TYPE}.feature
+        
+        echo "====================================="
+        echo "Test execution completed"
+        echo "====================================="
+
+  # Step 3: Check for failures
+  - name: 'gcr.io/cloud-builders/gcloud'
+    id: 'check-results'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        if [ -d "output/failed_testcases" ] && [ "$(ls -A output/failed_testcases 2>/dev/null)" ]; then
+          echo "⚠️ FAILED TEST CASES DETECTED!"
+          echo "Failed tests:"
+          ls -1 output/failed_testcases/
+          exit 1
+        else
+          echo "✅ All tests passed!"
+        fi
+
+  # Step 4: List generated files
+  - name: 'bash'
+    id: 'list-outputs'
+    args:
+      - '-c'
+      - |
+        echo "Generated output files:"
+        find output/ -type f -name "*.csv" -o -name "*.sql"
+
+# Substitution variables (override when triggering)
+substitutions:
+  _QUERY_TYPE: 'count'
+  _TABLENAME: '*'
+  _TAG: 'regression'
+
+# Preserve artifacts
+artifacts:
+  objects:
+    location: 'gs://${PROJECT_ID}-build-artifacts/cloudbuild/${BUILD_ID}/'
+    paths:
+      - 'output/**'
+      - 'target/karate-reports/**'
+
+# Timeout (1 hour)
+timeout: 3600s
+
+# Build options
+options:
+  machineType: 'E2_HIGHCPU_8'
+  logging: CLOUD_LOGGING_ONLY

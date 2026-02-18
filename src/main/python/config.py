@@ -2,6 +2,7 @@ import os
 import yaml
 from typing import Dict, List, Any
 from pathlib import Path
+from datetime import datetime, timedelta
 
 
 class ConfigManager:
@@ -16,6 +17,27 @@ class ConfigManager:
         "skip_tables": [],
         "deltaload_tables": []
     }
+    
+    # Default values when config is empty
+    DEFAULT_VALUES = {
+        "project": "ncau-data-newsquery-prd",
+        "project_nq": "ncau-data-newsquery-sit",
+        "dataset": "sdm_think",
+        "dataset_nq": "sdm_think"
+    }
+
+    @staticmethod
+    def _get_default_dates() -> Dict[str, str]:
+        """Calculate default dates based on current date."""
+        today = datetime.now()
+        yesterday = today - timedelta(days=1)
+        
+        return {
+            "startdate": yesterday.strftime("%Y-%m-%d"),      # CURRENT_DATE - 1
+            "enddate": yesterday.strftime("%Y-%m-%d"),        # CURRENT_DATE - 1
+            "startdate_nq": today.strftime("%Y-%m-%d"),       # CURRENT_DATE
+            "enddate_nq": today.strftime("%Y-%m-%d")          # CURRENT_DATE
+        }
 
     @staticmethod
     def load(config_file: str = "config/config.yaml") -> Dict[str, Any]:
@@ -38,11 +60,25 @@ class ConfigManager:
         with open(config_file, "r", encoding="utf-8") as f:
             config = yaml.safe_load(f) or {}
 
-        # Validate required keys
-        missing_keys = ConfigManager.REQUIRED_KEYS - set(config.keys())
-        if missing_keys:
-            raise ValueError(f"Missing required config keys: {missing_keys}")
-
+        # Get default dates
+        default_dates = ConfigManager._get_default_dates()
+        
+        # Apply defaults for empty or missing values
+        for key in ConfigManager.REQUIRED_KEYS:
+            value = config.get(key)
+            
+            # Check if value is None or empty string
+            if value is None or (isinstance(value, str) and value.strip() == ""):
+                # Apply default value
+                if key in ConfigManager.DEFAULT_VALUES:
+                    config[key] = ConfigManager.DEFAULT_VALUES[key]
+                    print(f"ℹ️  Using default for '{key}': {config[key]}")
+                elif key in default_dates:
+                    config[key] = default_dates[key]
+                    print(f"ℹ️  Using default for '{key}': {config[key]}")
+                else:
+                    raise ValueError(f"No default value available for required key: {key}")
+        
         # Add optional keys with defaults
         for key, default_value in ConfigManager.OPTIONAL_KEYS.items():
             config.setdefault(key, default_value)
