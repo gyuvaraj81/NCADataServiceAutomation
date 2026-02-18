@@ -1,0 +1,43 @@
+# JAR files
+#*.jar
+
+# Build outputs
+target/
+karate-reports*/
+
+# Logs
+logs/
+*.log
+
+# Node modules
+node_modules/
+
+# Output folders
+output/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test results
+*.xml

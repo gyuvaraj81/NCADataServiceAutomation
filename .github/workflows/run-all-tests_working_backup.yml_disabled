@@ -1,0 +1,73 @@
+name: Run All Validation Tests
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'  # Daily at 3 AM UTC (changed from weekly)
+
+jobs:
+  test-matrix:
+    name: ${{ matrix.query_type }} Validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    
+    strategy:
+      fail-fast: false
+      matrix:
+        query_type:
+          - count
+          - except_distinct_fullload
+          - except_distinct_deltaload
+          - schema_compare
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+      
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+      
+      - name: Run ${{ matrix.query_type }} tests
+        run: |
+          java -Dtablename='*' \
+               -jar karate-1.5.1.jar \
+               --tags @regression \
+               features/test_${{ matrix.query_type }}.feature
+        continue-on-error: true
+      
+      - name: Check for test failures
+        id: check-failures
+        run: |
+          if [ -d "output/failed_testcases" ] && [ "$(ls -A output/failed_testcases)" ]; then
+            echo "has_failures=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_failures=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Upload test results and logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-${{ matrix.query_type }}-${{ github.run_number }}
+          path: |
+            output/
+            target/karate-reports/
+            logs/
+          retention-days: 30
+      
+      - name: Fail job if tests failed
+        if: steps.check-failures.outputs.has_failures == 'true'
+        run: exit 1
